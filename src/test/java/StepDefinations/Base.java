@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import io.cucumber.java.Before;
-import io.cucumber.java.en.Given;
 public  class Base {
 	public static WebDriver driver;
 	public static Properties prop;

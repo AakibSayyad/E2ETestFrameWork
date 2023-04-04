@@ -1,10 +1,7 @@
 package StepDefinations;
 
-import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
