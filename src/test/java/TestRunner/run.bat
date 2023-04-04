@@ -1,1 +1,1 @@
-java testRunner.java
+java testRunner
