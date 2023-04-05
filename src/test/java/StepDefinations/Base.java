@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 public  class Base {
 	public static WebDriver driver;
@@ -28,5 +29,9 @@ public  class Base {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
+	}
+	@After
+	public void close() {
+		driver.close();
 	}
 	}
