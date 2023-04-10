@@ -5,5 +5,5 @@
     <classes>
       <class name="TestRunner.testRunner"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+</suite>
