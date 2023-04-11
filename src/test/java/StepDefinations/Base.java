@@ -28,8 +28,6 @@ public  class Base {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	if(browser.equals("edge")) {
-		
-		//options.addArguments("--remote-allow-origins=*");
 		driver = new EdgeDriver();
 		
 		driver.manage().window().maximize();

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.346 s <<< FAILURE! - in TestSuite
+TestRunner.testRunner.runScenario["To test if youtube search is working properly", "Youtube Search Funtionality"](1)  Time elapsed: 0.107 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.edge.EdgeOptions.addArguments(String[])" because "StepDefinations.Base.options" is null
+	at StepDefinations.Base.setup(Base.java:33)
+
+TestRunner.testRunner.runScenario["Login into udemy site", "Udemy login"](2)  Time elapsed: 0.016 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.edge.EdgeOptions.addArguments(String[])" because "StepDefinations.Base.options" is null
+	at StepDefinations.Base.setup(Base.java:33)
+
