@@ -20,11 +20,6 @@
     <allure.maven.version>2.10.0</allure.maven.version>
   </properties>
     <dependencies>
-    	<dependency>
-	    <groupId>io.qameta.allure</groupId>
-	    <artifactId>allure-cucumber5-jvm</artifactId>
-	    <version>2.21.0</version>
-		</dependency>
 		
 		<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
@@ -37,12 +32,6 @@
 	    <artifactId>testng</artifactId>
 	    <version>7.7.1</version>
 	  
-		</dependency>
-		
-		<dependency>
-	    <groupId>io.qameta.allure</groupId>
-	    <artifactId>allure-cucumber5-jvm</artifactId>
-	    <version>2.21.0</version>
 		</dependency>
 		
 		<dependency>
