@@ -21,6 +21,7 @@ public class CheckoutTest {
 		js.executeScript("window.scrollBy(0,250)", "");
 		String producttext ="OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)";
 		//String parent=driver.getWindowHandle();
+		Thread.sleep(2000);
 		Base.driver.findElement(By.linkText(producttext)).click();
 		Thread.sleep(3000);
 		Set<String>s=Base.driver.getWindowHandles();
