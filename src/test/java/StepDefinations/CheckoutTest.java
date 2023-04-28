@@ -18,7 +18,7 @@ public class CheckoutTest {
 		Base.driver.findElement(By.id("twotabsearchtextbox")).sendKeys(productname);
 		Base.driver.findElement(By.xpath("//input[@id=\"nav-search-submit-button\"]")).click();
 		JavascriptExecutor js = (JavascriptExecutor) Base.driver;
-		js.executeScript("window.scrollBy(0,500)", "");
+		js.executeScript("window.scrollBy(0,350)", "");
 		String producttext ="OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)";
 		//String parent=driver.getWindowHandle();
 		Thread.sleep(3000);
