@@ -22,8 +22,8 @@ public class saveForLaterTest {
 		js2.executeScript("window.scrollBy(0,300)", "");
 		Thread.sleep(3000);
 		String actualMobileName = Base.driver
-				.findElement(By.partialLinkText("OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB")).getText();
+				.findElement(By.partialLinkText(" OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storag... ")).getText();
 
-		Assert.assertEquals(actualMobileName, "OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)");
+		Assert.assertEquals(actualMobileName, " OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storag... ");
 	}
 }
