@@ -18,7 +18,7 @@ public class CheckoutTest {
 		Base.driver.findElement(By.id("twotabsearchtextbox")).sendKeys(productname);
 		Base.driver.findElement(By.xpath("//input[@id=\"nav-search-submit-button\"]")).click();
 		JavascriptExecutor js = (JavascriptExecutor) Base.driver;
-		js.executeScript("window.scrollBy(0,350)", "");
+		js.executeScript("window.scrollBy(0,250)", "");
 		String xpath ="//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/div/div[2]/div/div/div[1]/h2/a";
 		//String parent=driver.getWindowHandle();
 		Thread.sleep(3000);
