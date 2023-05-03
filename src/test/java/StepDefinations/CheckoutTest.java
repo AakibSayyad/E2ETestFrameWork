@@ -22,14 +22,14 @@ public class CheckoutTest {
 		Base.driver.findElement(By.xpath("//input[@id=\"nav-search-submit-button\"]")).click();
 		JavascriptExecutor js = (JavascriptExecutor) Base.driver;
 		js.executeScript("window.scrollBy(0,350)", "");
-		String xpath ="//span[normalize-space()='CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)']";
+		String productText ="OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)";
 		
 		
 		//String parent=driver.getWindowHandle();
 		Thread.sleep(3000);
 		WebDriverWait wait = new WebDriverWait(Base.driver, Duration.ofSeconds(6));
-		wait.until(ExpectedConditions.elementToBeClickable(Base.driver.findElement(By.xpath(xpath))));
-		Base.driver.findElement(By.xpath(xpath)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(Base.driver.findElement(By.linkText(productText))));
+		Base.driver.findElement(By.linkText(productText)).click();
 		Thread.sleep(3000);
 		Set<String>s=Base.driver.getWindowHandles();
 		// Now iterate using Iterator
