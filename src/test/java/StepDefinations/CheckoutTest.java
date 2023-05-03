@@ -1,10 +1,13 @@
 package StepDefinations;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import io.cucumber.java.en.Then;
@@ -24,6 +27,8 @@ public class CheckoutTest {
 		
 		//String parent=driver.getWindowHandle();
 		Thread.sleep(3000);
+		WebDriverWait wait = new WebDriverWait(Base.driver, Duration.ofSeconds(6));
+		wait.until(ExpectedConditions.elementToBeClickable(Base.driver.findElement(By.xpath(xpath))));
 		Base.driver.findElement(By.xpath(xpath)).click();
 		Thread.sleep(3000);
 		Set<String>s=Base.driver.getWindowHandles();
