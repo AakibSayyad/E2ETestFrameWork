@@ -17,9 +17,10 @@ public class saveForLaterTest {
 	}
 
 	@Then("check if item is added in save for later")
-	public void check_if_item_is_added_in_save_for_later() {
+	public void check_if_item_is_added_in_save_for_later() throws InterruptedException {
 		JavascriptExecutor js2 = (JavascriptExecutor) Base.driver;
 		js2.executeScript("window.scrollBy(0,300)", "");
+		Thread.sleep(3000);
 		String actualMobileName = Base.driver
 				.findElement(By.partialLinkText("OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB")).getText();
 
