@@ -19,7 +19,7 @@ public class CheckoutTest {
 		Base.driver.findElement(By.xpath("//input[@id=\"nav-search-submit-button\"]")).click();
 		JavascriptExecutor js = (JavascriptExecutor) Base.driver;
 		js.executeScript("window.scrollBy(0,250)", "");
-		String xpath ="//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/div/div[2]/div/div/div[1]/h2/a";
+		String xpath ="//a[@href='/OnePlus-Nord-Chromatic-128GB-Storage/dp/B0BY8MCQ9S/ref=sr_1_1?crid=1U0D9NI9VCJVA&amp;keywords=oneplus+nord&amp;qid=1683105885&amp;sprefix=oneplus+nor%2Caps%2C224&amp;sr=8-1']";
 		//String parent=driver.getWindowHandle();
 		Thread.sleep(3000);
 		Base.driver.findElement(By.xpath(xpath)).click();
