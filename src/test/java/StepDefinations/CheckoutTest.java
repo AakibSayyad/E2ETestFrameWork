@@ -19,7 +19,7 @@ public class CheckoutTest {
 		Base.driver.findElement(By.xpath("//input[@id=\"nav-search-submit-button\"]")).click();
 		JavascriptExecutor js = (JavascriptExecutor) Base.driver;
 		js.executeScript("window.scrollBy(0,250)", "");
-		String xpath ="//a[@href='/OnePlus-Nord-Chromatic-128GB-Storage/dp/B0BY8MCQ9S/ref=sr_1_1?crid=1U0D9NI9VCJVA&amp;keywords=oneplus+nord&amp;qid=1683105885&amp;sprefix=oneplus+nor%2Caps%2C224&amp;sr=8-1']";
+		String xpath ="//span[normalize-space()='CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)']";
 		//String parent=driver.getWindowHandle();
 		Thread.sleep(3000);
 		Base.driver.findElement(By.xpath(xpath)).click();
