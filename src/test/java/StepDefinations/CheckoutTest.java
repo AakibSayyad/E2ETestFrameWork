@@ -20,6 +20,8 @@ public class CheckoutTest {
 		JavascriptExecutor js = (JavascriptExecutor) Base.driver;
 		js.executeScript("window.scrollBy(0,250)", "");
 		String xpath ="//span[normalize-space()='CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)']";
+		
+		
 		//String parent=driver.getWindowHandle();
 		Thread.sleep(3000);
 		Base.driver.findElement(By.xpath(xpath)).click();
