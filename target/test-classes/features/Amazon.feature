@@ -10,14 +10,14 @@ Feature: Amazon Test
   Scenario: To test if checkout page is functioning correctly
     Given The driver is initiated and amazon site is loaded
     And User Enters credentials number "916374231718" and password "project@123"
-    When User searches "OnePlus Nord CE 2 Lite 5G" and clicks on buynow
+    When User searches "OnePlus Nord" and clicks on buynow
     Then Check if app is navigating to checkout page
 
   @SaveForLater
   Scenario: To test if Save for later functionality is working correctly
     Given The driver is initiated and amazon site is loaded
     And User Enters credentials number "916374231718" and password "project@123"
-    When User searches "OnePlus Nord CE 2 Lite 5G" and clicks on buynow
+    When User searches "OnePlus Nord" and clicks on buynow
     And Navigates to cart and clicks on save for later
     Then check if item is added in save for later
 

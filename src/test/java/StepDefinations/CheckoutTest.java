@@ -19,10 +19,10 @@ public class CheckoutTest {
 		Base.driver.findElement(By.xpath("//input[@id=\"nav-search-submit-button\"]")).click();
 		JavascriptExecutor js = (JavascriptExecutor) Base.driver;
 		js.executeScript("window.scrollBy(0,350)", "");
-		String producttext ="OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)";
+		String xpath ="//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/div/div[2]/div/div/div[1]/h2/a";
 		//String parent=driver.getWindowHandle();
 		Thread.sleep(3000);
-		Base.driver.findElement(By.linkText(producttext)).click();
+		Base.driver.findElement(By.xpath(xpath)).click();
 		Thread.sleep(3000);
 		Set<String>s=Base.driver.getWindowHandles();
 		// Now iterate using Iterator
