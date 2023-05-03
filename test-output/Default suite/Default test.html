@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 03 13:53:21 IST 2023</td>
+<td>Started on:</td><td>Wed May 03 15:56:34 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>153 seconds (153213 ms)</td>
+<tr><td>Total time:</td><td>118 seconds (118231 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,46 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test if Save for later functionality is working correctly", "Amazon Test"</td>
+<td><div><pre>java.util.NoSuchElementException
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:758)
+	at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:778)
+	at StepDefinations.CheckoutTest.user_searches_and_clicks_on_buynow(CheckoutTest.java:38)
+	at ✽.User searches &quot;OnePlus Nord&quot; and clicks on buynow(file:///C:/Users/003VR5744/eclipse-workspace/E2EFramework/src/test/java/features/Amazon.feature:20)
+</pre></div><a href='#' onClick='toggleBox("stack-trace37528429", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace37528429'><pre>java.util.NoSuchElementException
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:758)
+	at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:778)
+	at StepDefinations.CheckoutTest.user_searches_and_clicks_on_buynow(CheckoutTest.java:38)
+	at ✽.User searches &quot;OnePlus Nord&quot; and clicks on buynow(file:///C:/Users/003VR5744/eclipse-workspace/E2EFramework/src/test/java/features/Amazon.feature:20)
+</pre></div></td>
+<td>39</td>
+<td>TestRunner.testRunner@65987993</td></tr>
+<tr>
+<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test if checkout page is functioning correctly", "Amazon Test"</td>
+<td><div><pre>java.util.NoSuchElementException
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:758)
+	at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:778)
+	at StepDefinations.CheckoutTest.user_searches_and_clicks_on_buynow(CheckoutTest.java:38)
+	at ✽.User searches &quot;OnePlus Nord&quot; and clicks on buynow(file:///C:/Users/003VR5744/eclipse-workspace/E2EFramework/src/test/java/features/Amazon.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1897372527", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1897372527'><pre>java.util.NoSuchElementException
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:758)
+	at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:778)
+	at StepDefinations.CheckoutTest.user_searches_and_clicks_on_buynow(CheckoutTest.java:38)
+	at ✽.User searches &quot;OnePlus Nord&quot; and clicks on buynow(file:///C:/Users/003VR5744/eclipse-workspace/E2EFramework/src/test/java/features/Amazon.feature:13)
+</pre></div></td>
+<td>28</td>
+<td>TestRunner.testRunner@65987993</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,22 +117,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test if amazon sigin is working correctly", "Amazon Test"</td>
 <td></td>
-<td>17</td>
-<td>TestRunner.testRunner@65987993</td></tr>
-<tr>
-<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test if Save for later functionality is working correctly", "Amazon Test"</td>
-<td></td>
-<td>71</td>
-<td>TestRunner.testRunner@65987993</td></tr>
-<tr>
-<td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test if checkout page is functioning correctly", "Amazon Test"</td>
-<td></td>
-<td>39</td>
+<td>23</td>
 <td>TestRunner.testRunner@65987993</td></tr>
 <tr>
 <td title='TestRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test if add address functionality is working correctly", "Amazon Test"</td>
 <td></td>
-<td>24</td>
+<td>26</td>
 <td>TestRunner.testRunner@65987993</td></tr>
 </table><p>
 </body>
