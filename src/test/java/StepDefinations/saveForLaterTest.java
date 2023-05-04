@@ -9,9 +9,10 @@ import io.cucumber.java.en.When;
 
 public class saveForLaterTest {
 	@When("Navigates to cart and clicks on save for later")
-	public void navigates_to_cart_and_clicks_on_save_for_later() {
+	public void navigates_to_cart_and_clicks_on_save_for_later() throws InterruptedException {
 		Base.driver.findElement(By.xpath("//*[@id=\"banner-image\"]/span/span/div/i[1]")).click();
 		Base.driver.findElement(By.xpath("//*[@id=\"a-autoid-1\"]")).click();
+		Thread.sleep(3000);
 		Base.driver.findElement(By.xpath("//input[@value='Save for later']")).click();
 
 	}
