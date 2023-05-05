@@ -22,7 +22,7 @@ public class CheckoutTest {
 		Base.driver.findElement(By.xpath("//input[@id=\"nav-search-submit-button\"]")).click();
 		JavascriptExecutor js = (JavascriptExecutor) Base.driver;
 		js.executeScript("window.scrollBy(0,1000)", "");
-		String productText ="OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)";
+		String productText ="OnePlus Nord CE 2 Lite 5G (Black Dusk, 6GB RAM, 128GB Storage)";
 		
 		
 		//String parent=driver.getWindowHandle();
